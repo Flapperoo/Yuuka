@@ -1,6 +1,7 @@
 <nav>
     <a href="/register">Register</a> |
     <a href="/login">Login</a> | 
+    <a href="/dashboard">Dashboard</a> | 
     <a href="/onboarding">Onboarding</a> |
     <a href="/budgeting">Budgeting</a> | 
     <a href="/fundingGoals">Funding Goals</a> | 

@@ -8,6 +8,8 @@ module.exports = {
       yklightpurple: '#605a94',
       ykwhite: '#F5F5F5',
       ykgray: '#B9B8BF',
+      ykdarkgray: '#3B3B42',
+      ykred: '#EC2222',
     },
     extend: {},
   },

@@ -1,6 +1,5 @@
 <script>
 </script>
-
 <div class="flex bg-ykdarkgray overflow-auto">
     <!--SIDE NAV BAR-->
     <div class="bg-ykpurple h-screen px-6 py-10 w-72 overflow-auto">
@@ -38,12 +37,15 @@
                 <span class="text-[20px] ml-4 text-yklightblue">Settings</span>
             </div>
     </div>
-    <span class="p-5 text-4xl drop-shadow-lg font-bold text-ykwhite">Bill Tracker</span>
-    
     <!--END OF SIDE NAV BAR-->
+    
+   
     <!--MAIN CONTENT-->
-    <div class="grid grid-cols-5 h-screen w-screen gap-10 py-10 pl-10 pr-10">
-        <div class="col-span-3 row-span-1 bg-ykgray rounded-md p-5">
+    <div class="grid grid-cols-5 h-screen w-screen gap-10 pl-10 pr-10 pb-10">
+        <div class="col-span-6 mt-5">
+            <span class="text-4xl drop-shadow-lg font-bold text-ykwhite">Bill Tracker</span>
+        </div>
+        <div class="col-span-3 row-span-1 bg-ykgray rounded-md pb-5 px-5">
             <div class="p-2">
                 <label class="text-2xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-2" for="text">Bill Name</label>
                 <input id="bill_name" name="name" type="text" required class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
@@ -172,4 +174,3 @@
     </div>
     <!--END OF MAIN CONTENT-->
 </div>
-

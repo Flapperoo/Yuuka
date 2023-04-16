@@ -41,134 +41,106 @@
     
    
     <!--MAIN CONTENT-->
-    <div class="grid grid-cols-5 h-screen w-screen gap-10 pl-10 pr-10 pb-10">
-        <div class="col-span-6 mt-5">
-            <span class="text-4xl drop-shadow-lg font-bold text-ykwhite">Bill Tracker</span>
+    <div class="h-screen w-screen">
+        <div class="col-span-6 mt-20 ml-20">
+            <span class="text-8xl drop-shadow-lg font-bold text-ykwhite">CATEGORIES</span>
         </div>
-        <div class="col-span-3 row-span-1 bg-ykgray rounded-md pb-5 px-5">
-            <div class="p-2">
-                <label class="text-2xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-2" for="text">Bill Name</label>
-                <input id="bill_name" name="name" type="text" required class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="">
-            </div>
-            <div class="p-2">
-                <label class="text-2xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-2" for="amount">Amount</label>
-                <input id="amount" name="amount" type="text" required class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="₱">
+
+        <div class="bg-ykgray rounded-md pb-5 px-5 container mx-auto">
+            
+            <div class= "grid grid-cols-2 container mx-auto m-20 w-1/2">
+                <div class= "rounded-l-lg bg-ykpurple text-center mt-10 box-content h-20 ">  
+                    <button class ="text-ykwhite p-2 mt-4 text-3xl font-bold"> INCOMING </button>
+                </div>
+        
+                <div class= "rounded-r-lg bg-ykpurple text-center mt-10 box-content h-20">  
+                    <button class ="text-ykwhite p-2 mt-4 text-3xl font-bold"> OUTGOING </button>
+                </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
-                <div class="p-2"> <!--1st Column-->
-                    <h1 class="text-2xl font-medium text-ykpurple mb-2 md:mb-0 pr-4 pb-2">Repeat Pattern</h1>
-                    <div id="dropdown_1">
-                        <button class="">
-                            <label class="text-xl block text-ykpurple font-light mb-2 md:mb-0 text-left" for="text">Occurs</label>
-                            <input type="text" class="relative block w-full ppearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                            focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                        </button>
-                        <div class="bg-ykwhite rounded-md p-3">
-                            <ul>
-                                <li class="p-2">Everyday</li>
-                                <li class="p-2">Weekly</li>
-                                <li class="p-2">Bi-Weekly</li>
-                            </ul>
-                        </div>
+            <div class="content-between grid grid-cols-6 gap-4 bg-ykgray rounded-md pb-5 px-5">
+                <div class="p-2 mx-auto">
+                    <span class = "text-3xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-6">Add Category</span>
+                    <label class="text-2xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-2" for="text">New Category</label>
+                    <input id="New_Category_Name" name="name" type="text" required class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
+                    focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Input new category . . .">
+                </div>
+                <div class="p-2 mx-auto">
+                    <label class="text-2xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-2" for="amount">Select Class:</label>
+                    <input id="amount" name="amount" type="text" required class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
+                    focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Incoming/Outgoing">
+                    <div class="bg-ykwhite rounded-md p-3">
+                        <ul>
+                            <li class="p-2">Incoming</li>
+                            <li class="p-2">Outgoing</li>
+                        </ul>
                     </div>
-                    <div id="dropdown_2">
-                        <button class="">
-                            <label class="text-xl block text-ykpurple font-light mb-2 md:mb-0 text-left" for="text">On</label>
-                            <input type="text" class="relative block w-full ppearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                            focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                        </button>
-                        <div class="bg-ykwhite rounded-md p-3">
-                            <ul>
-                                <li class="p-2">Jan</li>
-                                <li class="p-2">Feb</li>
-                                <li class="p-2">March</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--END OF 1st Column-->
+                </div>
 
-                <div class="p-2"> <!--2md Column-->
-                    <h1 class="text-2xl font-medium text-ykpurple mb-2 md:mb-0 pr-4 pb-2">Remind Me</h1>
-                            <div id="dropdown_1">
-                                <button class="">
-                                    <label class="text-xl block text-ykpurple font-light mb-2 md:mb-0 text-left" for="text">Every</label>
-                                    <input type="text" class="relative block w-full ppearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                                    focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                                </button>
-                                <div class="bg-ykwhite rounded-md p-3">
-                                    <ul>
-                                        <li class="p-2">1st Week of the Month</li>
-                                        <li class="p-2">2nd Week of the Month</li>
-                                        <li class="p-2">3rd Week of the Month</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="dropdown_2">
-                                <button class="">
-                                    <label class="text-xl block text-ykpurple font-light mb-2 md:mb-0 text-left" for="text">Before Due In:</label>
-                                    <input type="text" class="relative block w-full ppearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                                    focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                                </button>
-                                <div class="bg-ykwhite rounded-md p-3">
-                                    <ul>
-                                        <li class="p-2">1 day</li>
-                                        <li class="p-2">2 days</li>
-                                        <li class="p-2">3 days</li>
-                                    </ul>
-                                </div>
-                            </div>
-                </div><!--END OF 2nd Column-->
+                <div class="mx-auto"> 
+                    <button class="rounded-md bg-ykpurple text-ykwhite p-2 pr-4 pl-4">Save</button>
+                </div>
+
+                <div class="mx-auto"> 
+                    <button class="rounded-md bg-ykpurple text-ykwhite p-2 pr-4 pl-4">Delete</button>
+                </div>
+
+                <div class="p-2 mx-auto">
+                    <label class="text-2xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-2" for="amount">Select Class:</label>
+                    <input id="amount" name="amount" type="text" required class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
+                    focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Incoming/Outgoing">
+                    <div class="bg-ykwhite rounded-md p-3">
+                        <ul>
+                            <li class="p-2">Incoming</li>
+                            <li class="p-2">Outgoing</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="p-2">
+                    <span class = "text-3xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-6">Delete Category</span>
+                    <label class="text-2xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-2" for="text">Existing Category:</label>
+                    <input id="Existing_Category_Name" name="name" type="text" required class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
+                    focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Select Category">
+                    <div class="bg-ykwhite rounded-md p-3">
+                        <ul>
+                            <li class="p-2">-</li>
+                            <li class="p-2">-</li>
+                            <li class="p-2">-</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="flex justify-end p-5 pt-10 mt-5">
-                <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">
-                  Save
-                </button>
-                
-                <button class="bg-ykred text-ykwhite font-bold py-2 px-4 rounded">
-                    Delete
-                </button>
+
+            <div class = "mt-20 text-center ">
+                <span class = "text-4xl font-bold">INCOMING</span>
             </div>
-        </div>
-        <!--2nd Column MAIN-->
-        <div class="col-span-2 row-span-1 bg-ykgray rounded-md p-5">
-            <p class="text-2xl font-bold text-ykpurple">Existing Reminders</p>
-            <div class="grid grid-cols-2 grid-rows-2 gap-4">
-                <div class="text-ykpurple">
-                    Bill Name 1
+
+            <div class = " grid grid-cols-4 gap-4 place-content-center bg-ykgray rounded-md ">
+                <div class= "rounded-lg bg-ykpurple text-center mt-10 box-content h-16 w-64">  
+                    <button class ="text-ykwhite p-2 mt-2 text-2xl font-bold"> CATEGORY </button>
                 </div>
-                <div class="text-ykpurple place-content-end">
-                    <input type="checkbox" id="myCheckbox" class="checkbox-input">
+                <div class= "rounded-lg bg-ykpurple text-center mt-10 box-content h-16 w-64">  
+                    <button class ="text-ykwhite p-2 mt-2 text-2xl font-bold"> CATEGORY </button>
                 </div>
-                <div class="text-ykpurple">
-                    Bill Name 2
+                <div class= "rounded-lg bg-ykpurple text-center mt-10 box-content h-16 w-64">  
+                    <button class ="text-ykwhite p-2 mt-2 text-2xl font-bold"> CATEGORY </button>
                 </div>
-                <div class="text-ykpurple place-content-end">
-                    <input type="checkbox" id="myCheckbox" class="checkbox-input">
+                <div class= "rounded-lg bg-ykpurple text-center mt-10 box-content h-16 w-64">  
+                    <button class ="text-ykwhite p-2 mt-2 text-2xl font-bold"> CATEGORY </button>
                 </div>
-                <div class="text-ykpurple">
-                    Bill Name 1
+                <div class= "rounded-lg bg-ykpurple text-center mt-10 box-content h-16 w-64">  
+                    <button class ="text-ykwhite p-2 mt-2 text-2xl font-bold"> CATEGORY </button>
                 </div>
-                <div class="text-ykpurple place-content-end">
-                    <input type="checkbox" id="myCheckbox" class="checkbox-input">
+                <div class= "rounded-lg bg-ykpurple text-center mt-10 box-content h-16 w-64">  
+                    <button class ="text-ykwhite p-2 mt-2 text-2xl font-bold"> CATEGORY </button>
                 </div>
-                <div class="text-ykpurple">
-                    Bill Name 2
+                <div class= "rounded-lg bg-ykpurple text-center mt-10 box-content h-16 w-64">  
+                    <button class ="text-ykwhite p-2 mt-2 text-2xl font-bold"> CATEGORY </button>
                 </div>
-                <div class="text-ykpurple place-content-end">
-                    <input type="checkbox" id="myCheckbox" class="checkbox-input">
+                <div class= "rounded-lg bg-ykpurple text-center mt-10 box-content h-16 w-64">  
+                    <button class ="text-ykwhite p-2 mt-2 text-2xl font-bold"> CATEGORY </button>
                 </div>
-              </div>
-              <div class="flex justify-end p-5 pt-10 mt-5">
-                <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">
-                  Save
-                </button>
-                
-                <button class="bg-ykred text-ykwhite font-bold py-2 px-4 rounded">
-                    Delete
-                </button>
             </div>
         </div>
     </div>

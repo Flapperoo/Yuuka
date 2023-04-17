@@ -113,7 +113,7 @@
             </div>
             <!--END OF FIRST COLUMN-->
             <!--SECOND COLUMN-->
-            <div class="flex-1 bg-ykgray p-6 rounded-md overflow-y-auto">
+            <div class="flex flex-col w-1/4 bg-ykgray p-6 rounded-md">
                 <h1 class="text-xl font-bold text-ykpurple pb-3">REMINDERS</h1>
                 <div class="px-5 sm:text-right md:text-left overflow-y-auto">
                     <div class="grid grid-cols-1 gap-1 overflow-y-auto">
@@ -192,12 +192,10 @@
                         
                     </div>
                 </div>
-                
-                <div class="relative flex justify-end pt-10">
+                <div class="flex justify-end pt-10">
                     <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">Save</button>
                     <button class="bg-ykred text-ykwhite font-bold py-2 px-4 rounded">Delete</button>
                 </div>
-
             </div>
             <!--END OF SECOND COLUMN-->
         </div>

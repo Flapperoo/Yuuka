@@ -1,176 +1,208 @@
 <script>
 </script>
-<div class="flex bg-ykdarkgray overflow-auto">
-    <!--SIDE NAV BAR-->
-    <div class="bg-ykpurple h-screen px-6 py-10 w-72 overflow-auto">
+
+<div class="flex h-screen bg-ykdarkgray">
+    <!-- SIDE NAV-BAR -->
+    <div class="w-72 px-6 py-10 bg-ykpurple">
         <img src="Yuuka_Logo.png" alt="yuuka logo" class="bg-cover bg-center justify-center drop-shadow-lg p-5 w-230 h-230 object-cover object-center"> <br>
             <h1 class="font-bold text-center text-2xl">Welcome Back!</h1><br>
             <h1 class="font-bold text-center text-xl">Sensei Master</h1><br>
             <hr class="my-2">
-            <!--Nav list-->
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <!--NAV LIST-->
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Dashboard</span>
+                <span class="text-[20px] ml-4 text-yklightblue "><a href="#">Dashboard</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Yuuka Helper</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Yuuka Helper</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Budgeting</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Budgeting</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Bill Tracker</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Bill Tracker</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Categories</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Categories</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Transactions</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Transactions</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Settings</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Settings</a></span>
             </div>
     </div>
-    <!--END OF SIDE NAV BAR-->
+    <!--END OF SIDEBAR-->
     
-   
     <!--MAIN CONTENT-->
-    <div class="grid grid-cols-5 h-screen w-screen gap-10 pl-10 pr-10 pb-10">
-        <div class="col-span-6 mt-5">
-            <span class="text-4xl drop-shadow-lg font-bold text-ykwhite">Bill Tracker</span>
+    <div class="flex-1">
+        <div class="px-6 py-5">
+            <h1 class="text-3xl font-bold text-ykwhite">BILL TRACKER</h1>
         </div>
-        <div class="col-span-3 row-span-1 bg-ykgray rounded-md pb-5 px-5">
-            <div class="p-2">
-                <label class="text-2xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-2" for="text">Bill Name</label>
-                <input id="bill_name" name="name" type="text" required class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="">
-            </div>
-            <div class="p-2">
-                <label class="text-2xl block text-ykpurple font-medium mb-2 md:mb-0 pr-4 pb-2" for="amount">Amount</label>
-                <input id="amount" name="amount" type="text" required class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="₱">
-            </div>
-
-            <div class="grid grid-cols-2 gap-4">
-                <div class="p-2"> <!--1st Column-->
-                    <h1 class="text-2xl font-medium text-ykpurple mb-2 md:mb-0 pr-4 pb-2">Repeat Pattern</h1>
-                    <div id="dropdown_1">
-                        <button class="">
-                            <label class="text-xl block text-ykpurple font-light mb-2 md:mb-0 text-left" for="text">Occurs</label>
-                            <input type="text" class="relative block w-full ppearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                            focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                        </button>
-                        <div class="bg-ykwhite rounded-md p-3">
-                            <ul>
-                                <li class="p-2">Everyday</li>
-                                <li class="p-2">Weekly</li>
-                                <li class="p-2">Bi-Weekly</li>
-                            </ul>
+      
+        <div class="flex m-6 gap-6">
+            <!--FIRST COLUMN-->
+            <div class="flex-1 bg-ykgray p-6 rounded-md max-h-full">
+                <h1 class="text-xl font-bold text-ykpurple pb-3">CREATE NEW BILL</h1>
+                <!--FIRST INNER COLUMN-->
+                <div class="grid grid-cols-1 p-2">
+                    <label for="BillName" class="text-xl font-medium text-ykpurple">Bill Name:</label>
+                    <input type="text" id="BillName" class="border border-ykpurple p-2 rounded-lg">
+                </div>
+                <div class="grid grid-cols-1 p-2">
+                    <label for="Amount" class="text-xl font-medium text-ykpurple">Amount:</label>
+                    <input type="text" id="Amount" class="border border-ykpurple p-2 rounded-lg">
+                </div>
+                <!--END OF FIRST INNER COLUMN-->
+                <!--SECOND INNER COLUMN-->
+                <div class="flex px-2 pt-6 gap-3">
+                    <div class="flex-1 w-1/2">
+                        <h1 class="text-xl font-medium text-ykpurple pb-3">Repeat Pattern:</h1>
+                        <div class="grid grid-cols-1 gap-1">
+                            <label for="Occurs" class="text-xl font-light text-ykpurple">Occurs:</label>
+                            <select id="Occurs" class="border-ykpurple pb-2 rounded-lg">
+                                <option value="" disabled selected>Choose a day:</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-1 gap-1 pt-10">
+                            <label for="On" class="text-xl font-light text-ykpurple">On:</label>
+                            <select id="On" class="border-ykpurple pb-2 rounded-lg">
+                                <option value="" disabled selected>Choose a time:</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
                         </div>
                     </div>
-                    <div id="dropdown_2">
-                        <button class="">
-                            <label class="text-xl block text-ykpurple font-light mb-2 md:mb-0 text-left" for="text">On</label>
-                            <input type="text" class="relative block w-full ppearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                            focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                        </button>
-                        <div class="bg-ykwhite rounded-md p-3">
-                            <ul>
-                                <li class="p-2">Jan</li>
-                                <li class="p-2">Feb</li>
-                                <li class="p-2">March</li>
-                            </ul>
+                    <div class="flex-1 w-1/2">
+                        <h1 class="text-xl font-medium text-ykpurple pb-3">Remind Me:</h1>
+                        <div class="grid grid-cols-1 gap-1">
+                            <label for="RemindMe" class="text-xl font-light text-ykpurple">Every:</label>
+                            <select id="RemindMe" class="border-ykpurple p-2 rounded-lg">
+                                <option value="" disabled selected>Choose a week of the month:</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-1 gap-1 pt-10">
+                            <label for="RemindMe" class="text-xl font-light text-ykpurple">Before Due In:</label>
+                            <select id="RemindMe" class="border-ykpurple p-2 rounded-lg">
+                                <option value="" disabled selected>Choose a week of the month:</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
                         </div>
                     </div>
-                </div><!--END OF 1st Column-->
+                </div>
+                <!--END OF SECOND INNER COLUMN-->
+                <div class="flex justify-end pt-10">
+                    <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">Save</button>
+                    <button class="bg-ykred text-ykwhite font-bold py-2 px-4 rounded">Delete</button>
+                </div>
+            </div>
+            <!--END OF FIRST COLUMN-->
+            <!--SECOND COLUMN-->
+            <div class="flex-1 bg-ykgray p-6 rounded-md overflow-y-auto">
+                <h1 class="text-xl font-bold text-ykpurple pb-3">REMINDERS</h1>
+                <div class="px-5 sm:text-right md:text-left overflow-y-auto">
+                    <div class="grid grid-cols-1 gap-1 overflow-y-auto">
+                        <table>
+                            <tbody class="text-ykpurple">
+                                <tr class="w-full">
+                                    <td class="px-3 py-2"><span class="text-lg">Bill Sample #1</span></td>
+                                    <td class="pl-7 pr-12"><input type="checkbox" id="billcheck1" class="checkbox-input ml-10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody class="text-ykpurple">
+                                <tr class="w-full">
+                                    <td class="px-3 py-2"><span class="text-lg">Bill Sample #2</span></td>
+                                    <td class="pl-7 pr-12"><input type="checkbox" id="billcheck1" class="checkbox-input ml-10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody class="text-ykpurple">
+                                <tr class="w-full">
+                                    <td class="px-3 py-2"><span class="text-lg">Bill Sample #3</span></td>
+                                    <td class="pl-7 pr-12"><input type="checkbox" id="billcheck1" class="checkbox-input ml-10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody class="text-ykpurple">
+                                <tr class="w-full">
+                                    <td class="px-3 py-2"><span class="text-lg">Bill Sample #4</span></td>
+                                    <td class="pl-7 pr-12"><input type="checkbox" id="billcheck1" class="checkbox-input ml-10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody class="text-ykpurple">
+                                <tr class="w-full">
+                                    <td class="px-3 py-2"><span class="text-lg">Bill Sample #5</span></td>
+                                    <td class="pl-7 pr-12"><input type="checkbox" id="billcheck1" class="checkbox-input ml-10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody class="text-ykpurple">
+                                <tr class="w-full">
+                                    <td class="px-3 py-2"><span class="text-lg">Bill Sample #6</span></td>
+                                    <td class="pl-7 pr-12"><input type="checkbox" id="billcheck1" class="checkbox-input ml-10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody class="text-ykpurple">
+                                <tr class="w-full">
+                                    <td class="px-3 py-2"><span class="text-lg">Bill Sample #7</span></td>
+                                    <td class="pl-7 pr-12"><input type="checkbox" id="billcheck1" class="checkbox-input ml-10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody class="text-ykpurple">
+                                <tr class="w-full">
+                                    <td class="px-3 py-2"><span class="text-lg">Bill Sample #8</span></td>
+                                    <td class="pl-7 pr-12"><input type="checkbox" id="billcheck1" class="checkbox-input ml-10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody class="text-ykpurple">
+                                <tr class="w-full">
+                                    <td class="px-3 py-2"><span class="text-lg">Bill Sample #9</span></td>
+                                    <td class="pl-7 pr-12"><input type="checkbox" id="billcheck1" class="checkbox-input ml-10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                
+                <div class="relative flex justify-end pt-10">
+                    <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">Save</button>
+                    <button class="bg-ykred text-ykwhite font-bold py-2 px-4 rounded">Delete</button>
+                </div>
 
-                <div class="p-2"> <!--2md Column-->
-                    <h1 class="text-2xl font-medium text-ykpurple mb-2 md:mb-0 pr-4 pb-2">Remind Me</h1>
-                            <div id="dropdown_1">
-                                <button class="">
-                                    <label class="text-xl block text-ykpurple font-light mb-2 md:mb-0 text-left" for="text">Every</label>
-                                    <input type="text" class="relative block w-full ppearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                                    focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                                </button>
-                                <div class="bg-ykwhite rounded-md p-3">
-                                    <ul>
-                                        <li class="p-2">1st Week of the Month</li>
-                                        <li class="p-2">2nd Week of the Month</li>
-                                        <li class="p-2">3rd Week of the Month</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="dropdown_2">
-                                <button class="">
-                                    <label class="text-xl block text-ykpurple font-light mb-2 md:mb-0 text-left" for="text">Before Due In:</label>
-                                    <input type="text" class="relative block w-full ppearance-none rounded-md border border-gray-300 px-3 py-2 text-ykpurple placeholder-gray-500 focus:z-10 focus:border-indigo-500 
-                                    focus:outline-none focus:ring-indigo-500 sm:text-sm">
-                                </button>
-                                <div class="bg-ykwhite rounded-md p-3">
-                                    <ul>
-                                        <li class="p-2">1 day</li>
-                                        <li class="p-2">2 days</li>
-                                        <li class="p-2">3 days</li>
-                                    </ul>
-                                </div>
-                            </div>
-                </div><!--END OF 2nd Column-->
             </div>
-            <div class="flex justify-end p-5 pt-10 mt-5">
-                <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">
-                  Save
-                </button>
-                
-                <button class="bg-ykred text-ykwhite font-bold py-2 px-4 rounded">
-                    Delete
-                </button>
-            </div>
-        </div>
-        <!--2nd Column MAIN-->
-        <div class="col-span-2 row-span-1 bg-ykgray rounded-md p-5">
-            <p class="text-2xl font-bold text-ykpurple">Existing Reminders</p>
-            <div class="grid grid-cols-2 grid-rows-2 gap-4">
-                <div class="text-ykpurple">
-                    Bill Name 1
-                </div>
-                <div class="text-ykpurple place-content-end">
-                    <input type="checkbox" id="myCheckbox" class="checkbox-input">
-                </div>
-                <div class="text-ykpurple">
-                    Bill Name 2
-                </div>
-                <div class="text-ykpurple place-content-end">
-                    <input type="checkbox" id="myCheckbox" class="checkbox-input">
-                </div>
-                <div class="text-ykpurple">
-                    Bill Name 1
-                </div>
-                <div class="text-ykpurple place-content-end">
-                    <input type="checkbox" id="myCheckbox" class="checkbox-input">
-                </div>
-                <div class="text-ykpurple">
-                    Bill Name 2
-                </div>
-                <div class="text-ykpurple place-content-end">
-                    <input type="checkbox" id="myCheckbox" class="checkbox-input">
-                </div>
-              </div>
-              <div class="flex justify-end p-5 pt-10 mt-5">
-                <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">
-                  Save
-                </button>
-                
-                <button class="bg-ykred text-ykwhite font-bold py-2 px-4 rounded">
-                    Delete
-                </button>
-            </div>
+            <!--END OF SECOND COLUMN-->
         </div>
     </div>
     <!--END OF MAIN CONTENT-->
-</div>
+
+  </div>
+  

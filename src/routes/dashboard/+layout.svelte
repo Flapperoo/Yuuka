@@ -1,7 +1,10 @@
+<script>
+    import logo from '$lib/static/Yuuka_Logo.png';
+</script>
 <div class="flex h-screen bg-ykdarkgray">
     <!-- SIDE NAV-BAR -->
     <div class="w-72 px-6 py-10 bg-ykpurple">
-        <img src="Yuuka_Logo.png" alt="yuuka logo" class="bg-cover bg-center justify-center drop-shadow-lg p-5 w-230 h-230 object-cover object-center"> <br>
+        <img src="{logo}" alt="yuuka logo" class="bg-cover bg-center justify-center drop-shadow-lg p-5 w-230 h-230 object-cover object-center"> <br>
             <h1 class="font-bold text-center text-2xl">Welcome Back!</h1><br>
             <h1 class="font-bold text-center text-xl">Sensei Master</h1><br>
             <hr class="my-2">

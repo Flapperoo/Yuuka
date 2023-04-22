@@ -1,119 +1,173 @@
 <script>
 </script>
 
-<div class="bg-ykdarkgray flex overflow-auto h-screen subpixel-antialiased">
-<!--SIDE NAV BAR-->    
-    <div class="bg-ykpurple h-screen px-6 py-10 w-72 overflow-auto">
+<div class="flex h-screen bg-ykdarkgray">
+    <!-- SIDE NAV-BAR -->
+    <div class="w-72 px-6 py-10 bg-ykpurple">
         <img src="Yuuka_Logo.png" alt="yuuka logo" class="bg-cover bg-center justify-center drop-shadow-lg p-5 w-230 h-230 object-cover object-center"> <br>
             <h1 class="font-bold text-center text-2xl">Welcome Back!</h1><br>
             <h1 class="font-bold text-center text-xl">Sensei Master</h1><br>
             <hr class="my-2">
-            <!--Nav list-->
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <!--NAV LIST-->
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Dashboard</span>
+                <span class="text-[20px] ml-4 text-yklightblue "><a href="#">Dashboard</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Yuuka Helper</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Yuuka Helper</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Budgeting</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Budgeting</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Bill Tracker</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Bill Tracker</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Categories</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Categories</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Transactions</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Transactions</a></span>
             </div>
-            <div class="p-1.5 mt-3 flex items-center rounded-md px-4">
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
                 <ion-icon name="speedometer-sharp"></ion-icon>
-                <span class="text-[20px] ml-4 text-yklightblue">Settings</span>
+                <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Settings</a></span>
             </div>
     </div>
-    <!--Main UI Title--> 
-    <div class="col-span-6 mt-5">
-        <span class = "text-ykwhite mt-20 ml-20 absolute left-50 top-20 text-8xl font-bold" > TRANSACTIONS </span>
+    <!--END OF SIDEBAR-->
+
+    <!--MAIN CONTENT-->
+    <div class="flex-1 max-h-full">
+        <div class="pl-6 py-6"> <!--WEBPAGE TITLE-->
+            <h1 class="text-3xl font-bold">Transactions</h1>
+        </div>
+        
+        <!--Transaction Content-->
+        <div class="flex flex-row gap-4 px-6">
+            <div class="w-4/5 h-full bg-ykgray overflow-y-auto rounded-xl pb-6">
+                <div class="pl-4 py-2 flex items-center justify-center"> <!--WEBPAGE TITLE-->
+                    <h1 class="text-3xl font-bold text-ykpurple">Your Transaction History</h1>
+                </div>
+                <!--Column 1-->
+                <div class="px-5 h-96 max-h-full overflow-y-auto">
+                    <div class="grid grid-cols-1 gap-3 grid-flow-row text-yklightpurple px-5 pt-2 w-auto overflow-auto">
+                        <!--Table 1-->
+                        <div class="py-2 flex"> <!--WEBPAGE TITLE-->
+                            <span class="text-xl font-bold text-ykpurple">April XX, XXXX</span>
+                        </div>
+                        <table class="table-auto border border-ykgray rounded-xl overflow-hidden">
+                            <tbody>
+                                <tr class="bg-ykwhite text-ykpurple text-left">
+                                    <td class="w-1/7 px-4 py-3"><span class="bg-ykgreen text-ykwhite rounded-xl px-2 py-1">6</span></td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Name</td>
+                                    <td class="w-1/7 px-4 py-3">Edit / Delete</td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Category</td>
+                                    <td class="w-1/7 px-4 py-3">+Php15,000.00</td>
+                                    <td class="w-1/7 px-4 py-3">Up/Down</td>
+                                </tr>
+                                <tr class="bg-ykwhite text-ykpurple text-left">
+                                    <td class="w-1/7 px-4 py-3"><span class="bg-ykred text-ykwhite rounded-xl px-2 py-1">5</span></td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Name</td>
+                                    <td class="w-1/7 px-4 py-3">Edit / Delete</td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Category</td>
+                                    <td class="w-1/7 px-5 py-3">-Php1,000.00</td>
+                                    <td class="w-1/7 px-4 py-3">Up/Down</td>
+                                </tr>
+                                <tr class="bg-ykwhite text-ykpurple text-left">
+                                    <td class="w-1/7 px-4 py-3"><span class="bg-ykred text-ykwhite rounded-xl px-2 py-1">4</span></td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Name</td>
+                                    <td class="w-1/7 px-4 py-3">Edit / Delete</td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Category</td>
+                                    <td class="w-1/7 px-5 py-3">-Php1,500.00</td>
+                                    <td class="w-1/7 px-4 py-3">Up/Down</td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                        <!--END OF TABLE 1-->
+                        <!--Table 1-->
+                        <div class="py-2 flex"> <!--WEBPAGE TITLE-->
+                            <span class="text-xl font-bold text-ykpurple">March XX, XXXX</span>
+                        </div>
+                        <table class="table-auto border border-ykgray rounded-xl overflow-hidden">
+                            <tbody>
+                                <tr class="bg-ykwhite text-ykpurple text-left">
+                                    <td class="w-1/7 px-4 py-3"><span class="bg-ykgreen text-ykwhite rounded-xl px-2 py-1">3</span></td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Name</td>
+                                    <td class="w-1/7 px-4 py-3">Edit / Delete</td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Category</td>
+                                    <td class="w-1/7 px-4 py-3">+Php15,000.00</td>
+                                    <td class="w-1/7 px-4 py-3">Up/Down</td>
+                                </tr>
+                                <tr class="bg-ykwhite text-ykpurple text-left">
+                                    <td class="w-1/7 px-4 py-3"><span class="bg-ykred text-ykwhite rounded-xl px-2 py-1">2</span></td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Name</td>
+                                    <td class="w-1/7 px-4 py-3">Edit / Delete</td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Category</td>
+                                    <td class="w-1/7 px-5 py-3">-Php1,000.00</td>
+                                    <td class="w-1/7 px-4 py-3">Up/Down</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--END OF TABLE 1-->
+                        <!--Table 1-->
+                        <div class="py-2 flex"> <!--WEBPAGE TITLE-->
+                            <span class="text-xl font-bold text-ykpurple">February XX, XXXX</span>
+                        </div>
+                        <table class="table-auto border border-ykgray rounded-xl overflow-hidden">
+                            <tbody>
+                                <tr class="bg-ykwhite text-ykpurple text-left">
+                                    <td class="w-1/7 px-4 py-3"><span class="bg-ykred text-ykwhite rounded-xl px-2 py-1">1</span></td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Name</td>
+                                    <td class="w-1/7 px-4 py-3">Edit / Delete</td>
+                                    <td class="w-1/7 px-4 py-3">Transaction Category</td>
+                                    <td class="w-1/7 px-5 py-3">-Php1,500.00</td>
+                                    <td class="w-1/7 px-4 py-3">Up/Down</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--END OF TABLE 1-->
+                    </div>
+                </div>
+                <!--END OF COLUMN 1-->
+            </div>
+          <!--COLUMN 2-->
+            <div class="w-1/5 bg-ykgray rounded-xl py-6">
+                <div class="flex-3 pl-4 py-2 justify-start">
+                    <h1 class="text-3xl font-bold text-ykpurple">New Transaction</h1>
+                </div>
+                <div class="gap-2">
+                    <div class="grid grid-cols-1 pl-10 py-1 mr-10">
+                        <label for="E_Name" class="text-xl font-medium text-ykpurple">Transaction Name:</label>
+                        <input type="text" id="E_Name" class="border border-ykpurple p-2 rounded-lg text-ykpurple">
+                    </div>
+                    <div class="grid grid-cols-1 pl-10 py-3 mr-10">
+                        <label for="M_amount" class="text-xl font-medium text-ykpurple">Amount:</label>
+                        <input type="text" id="M_amount" class="border border-ykpurple p-2 rounded-lg text-ykpurple">
+                    </div>
+                    <div class="grid grid-cols-1 pl-10 py-1 mr-10">
+                        <label for="M_amount" class="text-xl font-medium text-ykpurple">Category:</label>
+                        <select id="RemindMe" class="border-ykpurple p-2 rounded-lg">
+                            <option value="" disabled selected>Choose a category:</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-center p-5">
+                        <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">Add</button>
+                    </div>
+                    
+                </div>
+            </div>
+          
+          </div>
+        <!--End of Transaction Content-->
+       
     </div>
-    <!--Main Content--> 
-            <div class="bg-ykgray md:container md:mx-auto flex flex-col justify-center rounded-lg p-20 mt-80 ml-80 mb-80 "> 
-                <span class = "font-bold text-6xl text-center pt-0.5 pb-10 "> Your Transaction History </span>
-                
-                <span class = "text-xl p-2"> March XX, XXXX </span>
-                <div class = "flex box-content h-12 bg-ykwhite pt-5 pb-5 rounded-lg justify-center ">
-                    <div class = "grid grid-cols-7 grid-flow-col px-5 text-center">
-                        <span class = "text-ykwhite rounded-full w-12 ml-10 bg-ykgreen pt-3"> 3 </span>
-                        <span> Transaction Name </span>
-                        <span> Edit </span>
-                        <span> Delete </span>
-                        <span> Transaction Category </span>
-                        <span> +2500 </span>
-                        <span> V </span>
-                    </div>
-                </div>
-                <div class = "flex box-content h-12 bg-ykwhite pt-5 pb-5 rounded-lg justify-center">
-                    <div class = "grid grid-cols-7 grid-flow-col px-5 text-center">
-                        <span class = "text-ykwhite rounded-full w-12 ml-10 bg-ykred pt-3"> 2 </span>
-                        <span> Transaction Name </span>
-                        <span> Edit </span>
-                        <span> Delete </span>
-                        <span> Transaction Category </span>
-                        <span> -900 </span>
-                        <span> V </span>
-                    </div>
-                </div>
-                <div class = "flex box-content h-12 bg-ykwhite pt-5 pb-5 rounded-lg justify-center">
-                    <div class = "grid grid-cols-7 grid-flow-col px-5 text-center">
-                        <span class = "text-ykwhite rounded-full w-12 ml-10 bg-ykred pt-3"> 1 </span>
-                        <span> Transaction Name </span>
-                        <span> Edit </span>
-                        <span> Delete </span>
-                        <span> Transaction Category </span>
-                        <span> -1500 </span>
-                        <span> V </span>
-                    </div>
-                </div>
-                <span class = "text-xl p-2"> March XX, XXXX </span>
-                <div class = "flex box-content h-12 bg-ykwhite pt-5 pb-5 rounded-lg justify-center">
-                    <div class = "grid grid-cols-7 grid-flow-col px-5 text-center">
-                        <span class = "text-ykwhite rounded-full w-12 ml-10 bg-ykred pt-3"> 1 </span>
-                        <span> Transaction Name </span>
-                        <span> Edit </span>
-                        <span> Delete </span>
-                        <span> Transaction Category </span>
-                        <span> -50 </span>
-                        <span> V </span>
-                    </div>
-                </div>
-                <span class = "text-xl p-2"> March XX, XXXX </span>
-                <div class = "flex box-content h-12 bg-ykwhite pt-5 pb-5 rounded-lg justify-center">
-                    <div class = "grid grid-cols-7 grid-flow-col px-5 text-center">
-                        <span class = "text-ykwhite rounded-full w-12 ml-10 bg-ykred pt-3">2 </span>
-                        <span> Transaction Name </span>
-                        <span> Edit </span>
-                        <span> Delete </span>
-                        <span> Transaction Category </span>
-                        <span> -900 </span>
-                        <span> V </span>
-                    </div>
-                </div>
-                <div class = "flex box-content h-12 bg-ykwhite pt-5 pb-5 rounded-lg justify-center">
-                    <div class = "grid grid-cols-7 grid-flow-col px-5 text-center">
-                        <span class = "text-ykwhite rounded-full w-12 ml-10 bg-ykgreen pt-3"> 1 </span>
-                        <span> Transaction Name </span>
-                        <span> Edit </span>
-                        <span> Delete </span>
-                        <span> Transaction Category </span>
-                        <span> +500 </span>
-                        <span> V </span>
-                    </div>
-                </div>          
-            </div>     
+        
 </div>

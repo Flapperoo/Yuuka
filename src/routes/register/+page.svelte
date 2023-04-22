@@ -2,7 +2,7 @@
     <div class="bg-ykpurple flex flex-row rounded-xl">
         <div class="flex flex-col p-10 mx-4">
             <span class="font-bold mb-5 text-4xl text-ykwhite -ml-4">REGISTER</span>
-            <form>
+            <form action="?/register" method="POST">
                 <div class="gap-3 grid grid-cols-2">
                     <div class="form-control">
                         <label class="label" for="firstname">

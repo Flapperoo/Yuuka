@@ -1,3 +1,10 @@
+<script lang="ts">
+	import type { PageData } from "./$types";
+
+    export let data: PageData
+
+</script>
+
 <!--MAIN DASHBOARD-->
 <div class="flex-1 flex-wrap h-full">
     <div class="px-6 py-5">

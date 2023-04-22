@@ -47,16 +47,16 @@
         </div>
 
         <div class="flex w-1/8 px-6"> <!--TAB TITLE-->
-            <div class="w-1/8 p-2 bg-yklightpurple rounded-t-lg border">
-                <h1 class="text-3xl font-bold text-ykwhite justify-center items-center flex"><a href="#">Dash...</a></h1>
+            <div class="w-1/5 p-2 bg-yklightpurple rounded-t-lg border">
+                <h1 class="text-3xl font-bold text-ykwhite justify-center items-center flex"><a href="/dashboard/budgeting">Dashboard</a></h1>
             </div>
-            <div class="w-1/5 p-3 bg-yklightpurple rounded-t-lg border">
-                <h1 class="text-3xl font-bold text-ykwhite justify-center items-center flex"><a href="#">Settings</a></h1>
+            <div class="w-1/8 p-3 bg-yklightpurple rounded-t-lg border">
+                <h1 class="text-3xl font-bold text-ykwhite justify-center items-center flex"><a href="/dashboard/budgeting/settings">Sett...</a></h1>
             </div>
         </div>
-        <div class="px-6 overflow-hidden">
+        <div class="px-6 max-h-full overflow-hidden">
             <!--Main Div-->
-            <div class="flex-1 p-5 bg-ykgray rounded-md ">
+            <div class="flex-1 p-5 bg-ykgray rounded-md h-4/5 ">
                 <!--Balance and Incoming-->
                 <div class="grid grid-cols-2 gap-3 p-2">
                     <div class="grid p-3 bg-ykpurple rounded-lg">
@@ -106,26 +106,33 @@
                                 <h1 class="text-3xl font-bold text-ykpurple">Expenses</h1>
                             </div>
                             <div class="gap-3">
-                                <div class="grid grid-cols-1 pl-10 py-1 mr-10">
-                                    <label for="E_Name" class="text-xl font-medium text-ykpurple">Expense Name:</label>
-                                    <input type="text" id="E_Name" class="border border-ykpurple p-2 rounded-lg text-ykpurple">
+                                <!--Card Containers-->
+                                <div class="flex flex-col gap-3 p-2 h-96 overflow-auto">
+                                    <!--Card 1-->
+                                    <div class="flex bg-ykgray p-3 rounded-lg">
+                                        <div class="text-start ml-3">
+                                            <div class="flex items-center">
+                                                <span class="font-bold text-ykpurple text-4xl mr-2">Groceries</span>
+                                                <span class="font-bold text-ykpurple text-4xl mr-2">|</span>
+                                                <span class="font-bold text-ykpurple text-4xl mr-2">40%</span>
+                                            </div>
+                                            <div class="flex items-center pt-4">
+                                                <span class="font-bold text-ykdarkgray text-3xl mr-2">PHP 30,000.00</span>
+                                                <span class="font-bold text-ykdarkgray text-3xl mr-2">of</span>
+                                                <span class="font-bold text-ykdarkgray text-3xl mr-2">PHP 120,000.00</span>
+                                            </div>
+                                            <div class="flex items-center pt-8 w-full">
+                                                <input type="range" min="0" max="100" value="25" class="range range-yklightpurple bg-ykpurple" />
+                                            </div>
+                                            <div class="justify-end">
+                                                <span class="font-bold text-ykpurple text-2xl">25%</span>
+                                                <span class="font-bold text-ykpurple text-2xl">Completed</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End of Card 1-->
                                 </div>
-                                <div class="grid grid-cols-1 pl-10 py-3 mr-10">
-                                    <label for="M_amount" class="text-xl font-medium text-ykpurple">Maximum Amount:</label>
-                                    <input type="text" id="M_amount" class="border border-ykpurple p-2 rounded-lg text-ykpurple">
-                                </div>
-                                <div class="grid grid-cols-1 pl-10 py-1 mr-10">
-                                    <label for="M_amount" class="text-xl font-medium text-ykpurple">Category:</label>
-                                    <select id="RemindMe" class="border-ykpurple p-2 rounded-lg">
-                                        <option value="" disabled selected>Choose a category:</option>
-                                        <option value="option1">Option 1</option>
-                                        <option value="option2">Option 2</option>
-                                        <option value="option3">Option 3</option>
-                                    </select>
-                                </div>
-                                <div class="flex justify-center p-5">
-                                    <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">Add</button>
-                                </div>
+                                <!--End of Card Containers-->
                             </div>
                         </div>
                         <!--End of Column 1-->
@@ -136,26 +143,33 @@
                                 <h1 class="text-3xl font-bold text-ykpurple">Funding Goals</h1>
                             </div>
                             <div class="gap-3">
-                                <div class="grid grid-cols-1 pl-10 py-1 mr-10">
-                                    <label for="E_Name" class="text-xl font-medium text-ykpurple">Funding Goal Name:</label>
-                                    <input type="text" id="E_Name" class="border border-ykpurple p-2 rounded-lg text-ykpurple">
+                                <!--Card Containers-->
+                                <div class="flex flex-col gap-3 p-2 h-96 overflow-auto">
+                                    <!--Card 1-->
+                                    <div class="flex bg-ykgray p-3 rounded-lg">
+                                        <div class="text-start ml-3">
+                                            <div class="flex items-center">
+                                                <span class="font-bold text-ykpurple text-4xl mr-2">Toyota Vios GRS CVT</span>
+                                                <span class="font-bold text-ykpurple text-4xl mr-2">|</span>
+                                                <span class="font-bold text-ykpurple text-4xl mr-2">40%</span>
+                                            </div>
+                                            <div class="flex items-center pt-4">
+                                                <span class="font-bold text-ykdarkgray text-3xl mr-2">PHP 100,000.00</span>
+                                                <span class="font-bold text-ykdarkgray text-3xl mr-2">of</span>
+                                                <span class="font-bold text-ykdarkgray text-3xl mr-2">PHP 1,000,000.00</span>
+                                            </div>
+                                            <div class="flex items-center pt-8 w-full">
+                                                <input type="range" min="0" max="100" value="10" class="range range-yklightpurple bg-ykpurple" />
+                                            </div>
+                                            <div class="justify-end">
+                                                <span class="font-bold text-ykpurple text-2xl">10%</span>
+                                                <span class="font-bold text-ykpurple text-2xl">Completed</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End of Card 1-->
                                 </div>
-                                <div class="grid grid-cols-1 pl-10 py-3 mr-10">
-                                    <label for="M_amount" class="text-xl font-medium text-ykpurple">Goal Amount:</label>
-                                    <input type="text" id="M_amount" class="border border-ykpurple p-2 rounded-lg text-ykpurple">
-                                </div>
-                                <div class="grid grid-cols-1 pl-10 py-1 mr-10">
-                                    <label for="M_amount" class="text-xl font-medium text-ykpurple">Category:</label>
-                                    <select id="RemindMe" class="border-ykpurple p-2 rounded-lg">
-                                        <option value="" disabled selected>Choose a category:</option>
-                                        <option value="option1">Option 1</option>
-                                        <option value="option2">Option 2</option>
-                                        <option value="option3">Option 3</option>
-                                    </select>
-                                </div>
-                                <div class="flex justify-center p-5">
-                                    <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">Add</button>
-                                </div>
+                                <!--End of Card Containers-->
                             </div>
                         </div>
                         <!--End of Column 2-->

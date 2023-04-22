@@ -5,7 +5,7 @@
     <div class="bg-ykpurple flex flex-row rounded-xl">
         <div class="flex flex-col p-10 mx-4">
             <span class="font-bold mb-5 text-4xl text-white -ml-4">LOGIN</span>
-            <form>
+            <form action="?/login" method="POST">
                 <div class="gap-3 grid grid-cols-2">
                     <div class="form-control col-span-12">
                         <label class="label" for="email">

@@ -11,6 +11,7 @@ module.exports = {
       ykdarkgray: '#3B3B42',
       ykred: '#EC2222',
       ykgreen: '#0F6800',
+      yklime: '#83cb1a'
     },
     extend: {},
   },

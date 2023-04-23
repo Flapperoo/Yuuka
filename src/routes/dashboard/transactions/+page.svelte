@@ -1,7 +1,7 @@
 <script>
 </script>    
 <!--MAIN CONTENT-->
-<div class="flex-1 max-h-full">
+<div class="w-screen">
     <div class="pl-6 py-6"> <!--WEBPAGE TITLE-->
         <h1 class="text-3xl font-bold">Transactions</h1>
     </div>

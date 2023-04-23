@@ -2,11 +2,11 @@
     import yklogo from '$lib/static/Yuuka_Logo.png';
     import userPic from '$lib/static/avatar.jpeg';
 </script>
-<div class="flex flex-col w-screen gap-5">
-    <div class="ml-10 mt-5">
-        <span class="font-bold text-4xl text-ykwhite">YUUKA HELPER</span>    
+<div class="flex flex-col m-6 w-screen gap-5">
+    <div class="">
+        <span class="font-bold text-3xl text-ykwhite">YUUKA HELPER</span>    
     </div>
-    <div class="bg-ykwhite flex flex-col mx-10 mb-10 p-4 grow overflow-hidden">
+    <div class="bg-ykwhite flex flex-col p-4 grow overflow-hidden">
         <div class="bg-ykgray p-3 grow overflow-auto rounded-t-md">
             <div class="chat chat-start">
                 <div class="chat-image avatar">

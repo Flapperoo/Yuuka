@@ -2,7 +2,7 @@
 </script>
 
 <div class="flex flex-col gap-5 w-screen m-6">
-    <span class="text-3xl font-bold text-ykwhite">YUUKA DASHBOARD</span>
+    <span class="text-3xl font-bold text-ykwhite">DASHBOARD</span>
     <div class="flex flex-row h-1/4 gap-2">
         <div class="flex flex-col w-4/12 bg-ykgray p-3 gap-2 rounded-lg">
             <span class="text-2xl font-bold text-yklightpurple">Budgeting</span>

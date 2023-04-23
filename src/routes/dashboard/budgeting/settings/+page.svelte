@@ -2,13 +2,13 @@
 </script>
 
 <div class="flex flex-col gap-5 w-screen m-6">
-    <span class="text-3xl font-bold text-ykwhite">Budgeting</span>
+    <span class="text-3xl font-bold text-ykwhite">BUDGETING</span>
     <div class="flex flex-col">
-        <div class="flex flex-row gap-1">
-            <a href="/dashboard/budgeting" class="p-3 bg-ykpurple text-ykwhite text-3xl rounded-t-lg">Budgeting</a>
-            <a href="/dashboard/budgeting/settings" class="p-3 bg-ykpurple text-ykwhite text-3xl rounded-t-lg">Settings</a>
+        <div class="tabs">
+            <a href="/dashboard/budgeting" class="tab tab-lifted tab-lg text-ykwhite ">Budgeting</a>
+            <a href="/dashboard/budgeting/settings" class="tab tab-active tab-lifted tab-lg text-ykwhite ">Settings</a>
         </div>
-        <div class="bg-ykgray flex flex-col rounded-b-md rounded-tr-md gap-2 p-2">
+        <div class="bg-ykgray flex flex-col rounded-md gap-2 p-2">
             <div class="flex flex-row gap-2">
                 <div class="stats rounded-md shadow w-1/2">
                     <div class="stat bg-ykpurple place-items-center">

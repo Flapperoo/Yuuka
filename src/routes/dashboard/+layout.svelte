@@ -19,7 +19,7 @@
             <span class="text-[20px] ml-4 text-yklightblue"><a href="/dashboard/budgeting">Budgeting</a></span>
         </div>
         <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
-            <span class="text-[20px] ml-4 text-yklightblue"><a href="#">Bill Tracker</a></span>
+            <span class="text-[20px] ml-4 text-yklightblue"><a href="/dashboard/bills">Bill Tracker</a></span>
         </div>
         <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">
             <span class="text-[20px] ml-4 text-yklightblue"><a href="/dashboard/categories">Categories</a></span>

@@ -1,19 +1,10 @@
 <script>
 </script>
 <!-- MAIN CONTENT -->
-<div class="w-screen">
-    <div class="pl-6 py-6"> <!--WEBPAGE TITLE-->
-        <h1 class="text-3xl font-bold">Settings</h1>
-    </div>
-    <div class="px-6"> <!--TAB TITLE-->
-        <div class="flex-1 w-1/5 p-2 bg-yklightpurple flex items-center rounded-t-lg">
-            <img src="account-icon.png" alt="account-icon" class="pl-2 mr-2">
-            <h1 class="text-3xl font-medium text-ykwhite justify-center items-center flex">Account Settings</h1>
-        </div>
-    </div>
-    <!--SETTINGS CONTENT-->
-    <div class="px-6 h-4/5">
-        <div class="flex-auto h-full p-5 bg-ykgray rounded-r-md rounded-b-md">
+<div class="flex flex-col gap-5 w-screen m-6">
+    <span class="text-3xl font-bold text-ykwhite">CATEGORIES</span>
+    <div class="h-4/5">
+        <div class="flex-auto h-full p-5 bg-ykgray rounded-md">
             <div class="flex">
                 <div class="flex-1 pt-10">
                     <div class="grid grid-cols-1 pl-10 py-5 mr-10">
@@ -45,7 +36,6 @@
                             <input type="text" id="Username" class="border border-ykpurple p-2 rounded-lg">
                             <p class="text-end text-yklightpurple italic underline"><a href="#">Change Username</a></p>
                             <div class="flex justify-end pt-10">
-                                <button class="bg-ykpurple text-ykwhite font-bold py-2 px-4 rounded mr-3">Save</button>
                                 <form action="/logout" method="POST">
                                     <button class="bg-ykred text-ykwhite font-bold py-2 px-4 rounded" type="submit">Logout</button>
                                 </form>                                

@@ -1,4 +1,9 @@
-<script>
+<script lang="ts">
+	import type { PageData } from "./$types";
+
+    export let data: PageData;
+
+    let { session } = data;
 </script>
 <!-- MAIN CONTENT -->
 <div class="flex flex-col gap-5 w-screen m-6">
@@ -19,8 +24,7 @@
                     </div>
                     <div class="grid grid-cols-1 pl-10 py-5 mr-10">
                         <label for="EmailAdd" class="text-xl font-medium text-ykpurple">Email Address:</label>
-                        <input type="email" id="EmailAdd" class="border border-ykpurple p-2 rounded-lg">
-                        <p class="text-end text-yklightpurple italic underline"><a href="#">Change Email Address</a></p>
+                        <input type="email" id="EmailAdd" class="border border-ykpurple p-2 rounded-lg" value={session.user.email} disabled />
                     </div>
                     <div class="grid grid-cols-1 pl-10 py-5 mr-10">
                         <label for="Password" class="text-xl font-medium text-ykpurple">Password:</label>

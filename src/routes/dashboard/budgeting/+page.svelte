@@ -4,16 +4,18 @@
     let availableBalance: number;
     let outgoingAmount: number = 0;
     let incomingAmount: number = 0;
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth()+1;
 
     const incomingCat = $category.filter(x => x.direction === 'Incoming');
     const outgoingCat = $category.filter(x => x.direction === 'Outgoing');
     outgoingCat.forEach(cat => {
-        const outgoingTransactions = $transactions.filter(x => x.category_id === cat.id);
+        const outgoingTransactions = $transactions.filter(x => x.category_id === cat.id && new Date(x.created_at).getMonth()+1 === currentMonth && new Date(x.created_at).getFullYear() == currentYear);
         const holdingAmount =  outgoingTransactions.reduce((prev, cur) => prev + cur.amount, 0);
         outgoingAmount = outgoingAmount + holdingAmount;
     });
     incomingCat.forEach(cat => {
-        const incomingTransactions = $transactions.filter(x => x.category_id === cat.id);
+        const incomingTransactions = $transactions.filter(x => x.category_id === cat.id && new Date(x.created_at).getMonth()+1 === currentMonth && new Date(x.created_at).getFullYear() == currentYear);
         const holdingAmount =  incomingTransactions.reduce((prev, cur) => prev + cur.amount, 0);
         incomingAmount = incomingAmount + holdingAmount;
     });
@@ -59,7 +61,7 @@
             <span class="text-2xl font-bold text-ykpurple">Expenses</span>
             <div class="flex flex-col gap-2 overflow-y-auto">
                 {#each $expenses as item}
-                    {@const filteredTransactions = $transactions.filter(x => x.category_id === item.category_id)}
+                    {@const filteredTransactions = $transactions.filter(x => x.category_id === item.category_id && new Date(x.created_at).getMonth()+1 === currentMonth && new Date(x.created_at).getFullYear() == currentYear)}
                     {@const currentAmount = filteredTransactions.reduce((prev, cur) => prev + cur.amount, 0)}
                     {@const progress = (currentAmount / item.max_amount) * 100}
                     <div class="card bg-ykgray rounded-md">
@@ -76,7 +78,7 @@
             <span class="text-2xl font-bold text-ykpurple">Funding Goals</span>
             <div class="flex flex-col gap-2 overflow-y-auto">
                 {#each $funding as item}
-                    {@const filteredFunding = $funding.filter(x => x.category_id === item.category_id)}
+                    {@const filteredFunding = $transactions.filter(x => x.category_id === item.category_id && new Date(x.created_at).getMonth()+1 === currentMonth && new Date(x.created_at).getFullYear() == currentYear)}
                     {@const currentAmount = filteredFunding.reduce((prev, cur) => prev + cur.amount, 0)}
                     {@const progress = (currentAmount / item.goal_amount) * 100}
                     <div class="card bg-ykgray rounded-md">

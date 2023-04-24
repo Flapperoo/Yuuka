@@ -64,7 +64,7 @@
                 </div>
                 <!--Column 1-->
                 <div class="px-5 overflow-y-auto">
-                    {#if $transactions}
+                    {#if $transactions.length > 0}
                         <table class="table w-full">
                             <thead>
                                 <tr>

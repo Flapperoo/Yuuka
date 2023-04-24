@@ -1,5 +1,6 @@
 <script>
 	import { enhance } from "$app/forms";
+    import bg from '$lib/static/rg-modified.png';
 </script>
 
 <div class="flex flex-row h-screen items-center justify-center subpixel-antialiased">
@@ -28,7 +29,7 @@
                 <span>Don't have an account yet? <a href="/register" class="link text-yklightblue font-bold">SIGN UP</a></span>
             </div>            
         </div>
-        <div class="bg-cover bg-center flex flex-col gap-2 justify-center rounded-r-lg p-5 text-ykpurple" style="background-image: url('/src/lib/static/rg-modified.png')">
+        <div class="bg-cover bg-login-bg bg-center flex flex-col gap-2 justify-center rounded-r-lg p-5 text-ykpurple">
             <span class="font-bold text-4xl">YUUKA</span>
             <span class="font-semibold text-xl">Your Personal Financial Assistant</span>
         </div>

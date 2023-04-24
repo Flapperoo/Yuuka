@@ -13,7 +13,11 @@ module.exports = {
       ykgreen: '#0F6800',
       yklime: '#83cb1a'
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'login-bg': "url('/src/lib/static/rg-modified.png')"
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),

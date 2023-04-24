@@ -1,6 +1,5 @@
 <script lang="ts">
-    import { category, expenses, funding, reminders, transactions } from "$lib/stores/stores";
-	import { xlink_attr } from "svelte/internal";
+    import { category, funding, reminders, transactions } from "$lib/stores/stores";
 
     let availableBalance: number;
     let outgoingAmount: number = 0;
@@ -9,7 +8,6 @@
     const currentMonth = new Date().getMonth()+1;
 
     const remindersToday = $reminders.filter(x => x.remind_Day === new Date().getDate());
-    console.log(remindersToday);
     const incomingCat = $category.filter(x => x.direction === 'Incoming');
     const outgoingCat = $category.filter(x => x.direction === 'Outgoing');
     outgoingCat.forEach(cat => {
@@ -29,10 +27,10 @@
     let highestFundId: number;
     let lowestFunding: number = 0;
     let lowestFundId: number;
-    let highestFundingObject;
-    let highestFundingCurrent;
-    let lowestFundingObject;
-    let lowestFundingCurrent;
+    let highestFundingObject: any[];
+    let highestFundingCurrent: any;
+    let lowestFundingObject: any[];
+    let lowestFundingCurrent: any;
 
     $funding.forEach(fund => {
         const fundTransactions = $transactions.filter(x => x.category_id === fund.category_id);
@@ -87,8 +85,8 @@
                 <div class="stat bg-ykred">
                     {#if lowestFundId}
                         <div class="stat-title text-ykpurple">{lowestFundingObject[0].name}</div>
-                        <div class="stat-value text-ykpurple">P{highestFundingCurrent}</div>
-                        <div class="stat-desc text-ykpurple">out of P{highestFundingObject[0].goal_amount}</div>
+                        <div class="stat-value text-ykpurple">P{lowestFundingCurrent}</div>
+                        <div class="stat-desc text-ykpurple">out of P{lowestFundingObject[0].goal_amount}</div>
                     {:else}
                         <div class="stat-title text-ykpurple text-xl font-bold">No Funding Goal</div>
                     {/if}

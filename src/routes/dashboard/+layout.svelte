@@ -6,7 +6,6 @@
     <div class="w-64 min-w-[16rem] p-6 bg-ykpurple">
         <img src="{logo}" alt="yuuka logo" class="bg-cover bg-center justify-center drop-shadow-lg p-5 w-230 h-230 object-cover object-center">
         <h1 class="font-bold text-center text-2xl">Welcome Back!</h1><br>
-        <h1 class="font-bold text-center text-xl">Sensei Master</h1><br>
         <hr class="my-2">
         <!--NAV LIST-->
         <div class="p-1.5 mt-3 flex items-center rounded-md px-4 hover:bg-yklightpurple">

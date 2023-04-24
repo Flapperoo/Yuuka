@@ -38,6 +38,7 @@
 	"dependencies": {
 		"@supabase/auth-helpers-sveltekit": "^0.9.4",
 		"@supabase/supabase-js": "^2.21.0",
-		"daisyui": "^2.51.5"
+		"daisyui": "^2.51.5",
+		"openai": "^3.2.1"
 	}
 }

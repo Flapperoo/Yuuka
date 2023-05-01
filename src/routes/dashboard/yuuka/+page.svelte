@@ -17,6 +17,7 @@
     }];
 
     async function messageYuuka() {
+        if (!userMsg) return;
         conversation = [...conversation, { 'role': 'user', 'content' : `${userMsg}` }];
         userMsg = '';
         const result = await openai.createChatCompletion({

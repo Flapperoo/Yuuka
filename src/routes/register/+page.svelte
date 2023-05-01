@@ -20,13 +20,13 @@
                         <label class="label" for="email">
                             <span class="label-text text-lg text-ykwhite">E-mail Address</span>
                         </label>
-                        <input type="email" name="email" placeholder="E-mail Address" class="input input-bordered" />
+                        <input type="email" name="email" placeholder="E-mail Address" class="input input-bordered" required />
                     </div>
                     <div class="form-control col-span-2">
                         <label class="label" for="password">
                             <span class="label-text text-lg text-ykwhite">Password</span>
                         </label>
-                        <input type="password" name="password" placeholder="Password" class="input input-bordered" />
+                        <input type="password" name="password" placeholder="Password" class="input input-bordered" required />
                     </div>
                     <button class="btn col-start-2 ml-auto mt-3 bg-yklightpurple text-ykwhite" type="submit">Submit</button>
                 </div>

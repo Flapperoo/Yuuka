@@ -7,6 +7,12 @@ export const load: PageLoad = async ({ parent }) => {
     if (!session) {
         throw redirect(303, '/login');
     };
-    const { data: remindersData } = await supabase.from('reminders').select('*');
-    reminders.set(remindersData);
+    const loadReminders = async () => {
+        const { data: remindersData } = await supabase.from('reminders').select('*');
+        reminders.set(remindersData);
+    }
+
+    return{
+        a: loadReminders()
+    }
 };

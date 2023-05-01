@@ -7,14 +7,36 @@ export const load: PageLoad = async ({ parent }) => {
     if (!session) {
         throw redirect(303, '/login');
     };
-    const { data: expensesData } = await supabase.from('expenses').select('*');
-    expenses.set(expensesData);
-    const { data: fundingData } = await supabase.from('funding').select('*');
-    funding.set(fundingData);
-    const { data: transactionsData } = await supabase.from('transactions').select('*');
-    transactions.set(transactionsData);
-    const { data: categoryData } = await supabase.from('category').select('*');
-    category.set(categoryData);
-    const { data: remindersData } = await supabase.from('reminders').select('*');
-    reminders.set(remindersData);
+    const loadExpenses = async () => {
+        const { data: expensesData } =  await supabase.from('expenses').select('*');
+        expenses.set(expensesData);
+    }
+    const loadFunding = async () => {
+        const { data: fundingData } = await supabase.from('funding').select('*');
+        funding.set(fundingData);
+    }
+    const loadTransactions = async () => {
+        const { data: transactionsData } = await supabase.from('transactions').select('*');
+        transactions.set(transactionsData);
+    }
+    const loadCategory = async () => {
+        const { data: categoryData } = await supabase.from('category').select('*');
+        category.set(categoryData);
+    }
+    const loadReminders = async () => {
+        const { data: remindersData } = await supabase.from('reminders').select('*');
+        reminders.set(remindersData);
+    }
+
+    return {
+        a: loadExpenses(),
+        b: loadFunding(),
+        c: loadTransactions(),
+        d: loadCategory(),
+        e: loadReminders()
+    }
+    
+    
+    
+    
 };

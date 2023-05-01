@@ -78,7 +78,7 @@
             <span class="text-2xl font-bold text-ykpurple">Funding Goals</span>
             <div class="flex flex-col gap-2 overflow-y-auto">
                 {#each $funding as item}
-                    {@const filteredFunding = $transactions.filter(x => x.category_id === item.category_id && new Date(x.created_at).getMonth()+1 === currentMonth && new Date(x.created_at).getFullYear() == currentYear)}
+                    {@const filteredFunding = $transactions.filter(x => x.category_id === item.category_id)}
                     {@const currentAmount = filteredFunding.reduce((prev, cur) => prev + cur.amount, 0)}
                     {@const progress = (currentAmount / item.goal_amount) * 100}
                     <div class="card bg-ykgray rounded-md">

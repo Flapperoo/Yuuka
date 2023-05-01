@@ -7,6 +7,12 @@ export const load: PageLoad = async ({ parent }) => {
     if (!session) {
         throw redirect(303, '/login');
     }
-    const { data: tableData } = await supabase.from('category').select('*');
-    category.set(tableData);
+    const loadCategory = async () => {
+        const { data: categoryData } = await supabase.from('category').select('*');
+        category.set(categoryData);
+    }
+
+    return{
+        a: loadCategory()
+    }
 };

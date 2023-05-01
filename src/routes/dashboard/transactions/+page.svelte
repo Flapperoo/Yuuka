@@ -8,6 +8,7 @@
     let transactionName: string;
     let transactionAmount: number;
     let transactionCategory: number;
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     
     async function addTransaction() {
         const { error: err } = await data.supabase.from('transactions').insert({ name: transactionName, amount: transactionAmount, category_id: transactionCategory, user_id: data.session?.user.id });
@@ -78,8 +79,9 @@
                             <tbody>
                                 {#each $transactions as item}
                                     {@const categoryHolder = $category.filter(x => x.id === item.category_id)}
+                                    {@const dateHolder =  new Date(item.created_at)}
                                     <tr>
-                                        <td>{item.created_at}</td>
+                                        <td>{months[dateHolder.getMonth()]} {dateHolder.getDate()}, {dateHolder.getFullYear()}</td>
                                         <td>{item.name}</td>
                                         <td>{item.amount}</td>
                                         <td>{categoryHolder[0].name}

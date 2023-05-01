@@ -6,6 +6,7 @@
     let incomingAmount: number = 0;
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth()+1;
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     const remindersToday = $reminders.filter(x => x.remind_Day === new Date().getDate());
     const incomingCat = $category.filter(x => x.direction === 'Incoming');
@@ -126,8 +127,9 @@
                 <tbody>
                     {#each $transactions as item}
                         {@const categoryHolder = $category.filter(x => x.id === item.category_id)}
+                        {@const dateHolder =  new Date(item.created_at)}
                         <tr>
-                            <td>{item.created_at}</td>
+                            <td>{months[dateHolder.getMonth()]} {dateHolder.getDate()}, {dateHolder.getFullYear()}</td>
                             <td>{item.name}</td>
                             <td>{item.amount}</td>
                             <td>{categoryHolder[0].name}
